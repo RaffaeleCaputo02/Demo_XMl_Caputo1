@@ -43,10 +43,10 @@ namespace Demo_XML_Caputo
             string path = @"Calcio.xml";
             XDocument xmlDoc = XDocument.Load(path);
             XElement xmlcalciatori = xmlDoc.Element("calciatori");
-            var xmlatleta = xmlcalciatori.Elements("calciatore");
+            var xmlcalciatore = xmlcalciatori.Elements("calciatore");
             Thread.Sleep(1000);
 
-            foreach (var item in xmlatleta)
+            foreach (var item in xmlcalciatore)
             {
                 XElement xmlFirstName = item.Element("nome");
                 XElement xmlLastName = item.Element("cognome");
