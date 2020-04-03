@@ -16,7 +16,7 @@ namespace Demo_XML_Caputo
 
         public override string ToString()
         {
-            return $"{Nome} {Cognome}";
+            return $"{Nome}";
         }
     }
 }

@@ -7,9 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="Auto" Background="#FF868CF9">
-        <Button x:Name="btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Margin="79,52,0,0" VerticalAlignment="Top" Width="236" Height="72" Click="btn_Aggiorna_Click" FontSize="18"/>
-        <ListBox x:Name="lst_Calciatori" Margin="400,52,99,51" FontSize="16"/>
-        <Button x:Name="btn_Stop" Content="Interrompi Caricamento" HorizontalAlignment="Left" Margin="79,0,0,0" VerticalAlignment="Center" Width="236" Height="90" FontSize="18" IsEnabled="False" Click="btn_Stop_Click"/>
+        <Button x:Name="btn_Aggiorna" Content="Visualizza dati" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="208" Height="72" Click="btn_Aggiorna_Click" FontSize="18"/>
+        <ListBox x:Name="lst_Calciatori" Margin="23,93,476,10" FontSize="16"/>
+        <Button x:Name="btn_Stop" Content="Interrompi Caricamento" HorizontalAlignment="Left" Margin="242,10,0,0" VerticalAlignment="Top" Width="177" Height="72" FontSize="18" Click="btn_Stop_Click" IsEnabled="False"/>
+        <Label x:Name="lbl_Nome" Content="Nome" HorizontalAlignment="Center" Margin="0,134,0,0" VerticalAlignment="Top" Width="92" FontSize="20" IsEnabled="False"/>
+        <Label x:Name="lbl_Cognome" Content="Cognome" HorizontalAlignment="Center" Margin="0,190,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False"/>
+        <Label x:Name="lbl_Squadra" Content="Squadra" HorizontalAlignment="Left" Margin="354,246,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False"/>
+        <Label x:Name="lbl_Numero" Content="Numero Maglia" Margin="354,300,292,76" FontSize="20" IsEnabled="False"/>
+        <Button x:Name="btn_Modifica" Content="Modifica" Margin="456,10,97,352" FontSize="20" Click="btn_Modifica_Click"/>
+        <TextBox x:Name="txt_Nome" HorizontalAlignment="Left"  Margin="476,134,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="37" TextChanged="TextBox_TextChanged" FontSize="20" IsEnabled="False"/>
+        <TextBox x:Name="txt_Cognome" HorizontalAlignment="Left" Margin="476,190,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="37" FontSize="20" IsEnabled="False"/>
+        <TextBox x:Name="txt_Squadra" HorizontalAlignment="Left" Margin="476,241,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Height="42" FontSize="20" IsEnabled="False"/>
+        <TextBox x:Name="txt_Numero" HorizontalAlignment="Left" Margin="513,300,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="252" Height="42" FontSize="20" IsEnabled="False"/>
+        <Button x:Name="btn_Salva" Content="Salva" Margin="400,358,123,15" FontSize="20" IsEnabled="False" Click="btn_Salva_Click"/>
 
     </Grid>
 </Window>
